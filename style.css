@@ -1,0 +1,303 @@
+:root {
+    --bg-color: #dddddd;
+    --text-color: #1c1b1b;
+    --description-color: #909090;
+    --content-color: #434343;
+    --primary-color: #f08746;
+    --card-color: #ffffff;
+    --success-color: #28a745;
+    --input-box-color: #f9f9f9;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: #bdbdbd 2px 2px 50px;
+    border-radius: 15px;
+    width: auto;
+    height: 599px;
+    max-width: 1000px;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.main-container >.image{
+    display: contents;
+}
+
+.main-container > .image , img{
+    border-radius: 15px 0 0 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    max-width:fit-content;
+    padding : 20px 0px 0px 20px;
+    border-radius: 0 15px 15px 0;
+    background-color: var(--card-color);
+}
+
+
+.form-title{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    padding-right: 20px;
+}
+
+.form-title > h1{
+    margin-bottom: 10px;
+    font-size:2.4rem;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-title > p{
+    font-size: 1rem;
+    color: var(--description-color);
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    padding-right: 20px;
+
+}
+
+.form-control{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 15px;
+    background-color: var(--input-box-color);
+    border-radius: 10px;
+}
+
+
+.form-control > label{
+    margin-bottom: 10px;
+    color: var(--description-color);
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.form-control > input{
+   border: none;
+   background-color: transparent;
+   outline: none;
+   font-size: 1rem;
+   font-family: 'Roboto', sans-serif;
+   color: var(--content-color);
+}
+
+
+
+.form > .form-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.form-bottom > .check-remmeber{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.form-bottom  > a{
+    color: var(--content-color);
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-bottom > .check-remmeber > label{
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--content-color);
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+
+}
+
+input[type="checkbox"]:checked::after {
+    content: '\2713';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+
+
+
+input[type="checkbox"]:checked {
+    background-color: var(--primary-color);
+
+}
+
+
+
+.form-submit{
+    width: 100%;
+    height: 100%;
+    padding: 0px!important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.form-submit > button{
+    width: 150px;
+    height: 60px;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 15px;
+    border-radius: 10px 0px 0px 0px;
+    cursor: pointer;
+}
+
+
+.form-submit > button:hover{
+    opacity: 0.8;
+}
+
+.form-submit > .register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
+.form-submit > .register > a{
+    color: var(--content-color);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.form-submit > .register > a:hover{
+    text-decoration: underline;
+}
+
+
+.form-submit > .register > p{
+    color: var(--description-color);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main-container {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        max-width: none;
+        max-height: fit-content;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+
+    .main-container > .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-container > .image img {
+        border-radius: 15px;
+    }
+
+    .form-container {
+        width: 100%;
+        border-radius:15px;
+    }
+
+    .form-title > h1 {
+        font-size: 1.8rem;
+    }
+
+    .form-title > p {
+        font-size: 0.9rem;
+    }
+
+   
+    .form-bottom > a {
+        font-size: 0.7rem;
+    }
+
+    .form-bottom > .check-remmeber > label {
+        font-size: 0.7rem;
+    }
+
+    .form-submit {
+        padding: 0px!important;
+        margin-top: 20px;
+    }
+
+    .form-submit > button {
+        width: 100px;
+        height: 50px;
+        font-size: 0.9rem;
+    }
+}
