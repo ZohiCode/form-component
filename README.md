@@ -37,7 +37,10 @@ Proje için kullanılan bazı CSS değişkenleri:
 ## Özellikler ✨
 
 - **Responsif Tasarım**: Form, mobil cihazlara uygun şekilde düzenlenmiştir, böylece her türlü ekran boyutunda sorunsuz çalışır.⚡
+  
   <img src="https://github.com/ZohiCode/form-component/assets/162303493/049a5356-0c19-4bce-8144-8763db133d10" alt="mobile-form" width="350"/>
+
+  
 - **Kullanıcı Dostu Arayüz**: Basit ve anlaşılır bir tasarıma sahip olan form, kullanıcıların giriş işlemlerini hızlı ve kolay bir şekilde yapmalarını sağlar.🔥
   
 - **Özelleştirilebilir CSS Değişkenleri**: Renk temasını kolayca değiştirmek için CSS değişkenleri kullanılmıştır, böylece formun görünümü projenizin gereksinimlerine göre özelleştirilebilir.
